@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finance_tracker"
+version = "1.0.0"
+authors = [
+    { name = "Valeriyi Velychko", email = "student@vntu.edu.ua" }
+]
+description = "Консольний інтерактивний трекер фінансів організації із захистом від збоїв"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+finance-cli = "main:main"
